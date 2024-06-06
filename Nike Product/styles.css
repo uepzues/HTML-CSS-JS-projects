@@ -24,7 +24,7 @@ body {
 .container {
   margin: auto;
   width: 360px;
-  height: 600px;
+  height: 70%;
   border-radius: 20px;
   background-color: #fff;
 }
@@ -44,7 +44,7 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .container .card_wrapper .card .card_top .logo {
-  height: 40px;
+  height: 35px;
   border-radius: 20px;
   margin-bottom: 30px;
 }
@@ -112,7 +112,6 @@ body {
   font-size: 1.4rem;
   font-weight: 900;
   color: rgb(60, 73, 87);
-  margin-bottom: 5px;
 }
 .container .card_wrapper .card .card_bottom .size .sizes {
   display: flex;
@@ -122,7 +121,7 @@ body {
 .container .card_wrapper .card .card_bottom .size .sizes > p {
   width: 32px;
   height: 32px;
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 3px;
   text-align: center;
   transform: translateX(-10px);
@@ -135,6 +134,49 @@ body {
   background-color: #3dbebe;
   color: #fff;
   border-radius: 20px;
+}
+.container .card_wrapper .card .card_bottom .color {
+  position: relative;
+}
+.container .card_wrapper .card .card_bottom .color h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgb(60, 73, 87);
+  margin-bottom: 10px;
+}
+.container .card_wrapper .card .card_bottom .color button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+.container .card_wrapper .card .card_bottom .color #blue {
+  background-color: blue;
+}
+.container .card_wrapper .card .card_bottom .color #red {
+  background-color: red;
+  margin-left: 10px;
+}
+.container .card_wrapper .card .card_bottom .color .price {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  color: #fdfdfd;
+  background-color: #134381;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.container .card_wrapper .card .card_bottom .color .price :first-child {
+  font-weight: 200;
+}
+.container .card_wrapper .card .card_bottom .color .price :last-child {
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
