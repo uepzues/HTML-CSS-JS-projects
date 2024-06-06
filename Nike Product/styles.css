@@ -16,7 +16,7 @@ html {
 
 body {
   height: 100vh;
-  background-color: slategray;
+  background-color: rgb(37, 46, 54);
   font-family: "Nunito", Arial, sans-serif;
   display: flex;
 }
@@ -27,6 +27,7 @@ body {
   height: 70%;
   border-radius: 20px;
   background-color: #fff;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.7);
 }
 .container .card_wrapper {
   height: 100%;
@@ -37,11 +38,12 @@ body {
   height: 100%;
 }
 .container .card_wrapper .card .card_top {
-  background-color: goldenrod;
+  background-color: #d5a52b;
   position: relative;
   height: 100%;
   padding: 30px 30px 90px 30px;
   border-radius: 20px 20px 0 0;
+  transition: 500ms;
 }
 .container .card_wrapper .card .card_top .logo {
   height: 35px;
@@ -65,6 +67,15 @@ body {
   position: absolute;
   top: -20px;
   right: -100px;
+  rotate: 0deg;
+  transform-origin: bottom left;
+}
+.container .card_wrapper .card .card_top .shoes .shoe2 {
+  height: 370px;
+  position: absolute;
+  top: -15px;
+  right: -500px;
+  transform-origin: bottom left;
 }
 .container .card_wrapper .card .card_bottom {
   padding: 30px;
@@ -134,6 +145,7 @@ body {
   background-color: #3dbebe;
   color: #fff;
   border-radius: 20px;
+  transform: translate(-8px, -6px);
 }
 .container .card_wrapper .card .card_bottom .color {
   position: relative;
@@ -151,6 +163,10 @@ body {
   border: none;
   border-radius: 20px;
 }
+.container .card_wrapper .card .card_bottom .color button:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
 .container .card_wrapper .card .card_bottom .color #blue {
   background-color: blue;
 }
@@ -161,7 +177,7 @@ body {
 .container .card_wrapper .card .card_bottom .color .price {
   position: absolute;
   right: -50px;
-  bottom: 0;
+  bottom: -10px;
   display: flex;
   align-items: center;
   font-size: 2.4rem;
@@ -177,6 +193,74 @@ body {
 .container .card_wrapper .card .card_bottom .color .price :last-child {
   font-weight: 700;
   margin-left: 10px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container.change.card_top {
+  background-color: #d35246;
+}
+
+@keyframes translateRed {
+  0% {
+    right: -500px;
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -40deg;
+    right: -230px;
+  }
+}
+@keyframes translateBlue {
+  0% {
+    top: -20px;
+    right: -100px;
+    rotate: 0deg;
+  }
+  100% {
+    top: -70px;
+    right: 500px;
+    rotate: 40deg;
+  }
+}
+@keyframes translateRedRev {
+  0% {
+    rotate: -40deg;
+    right: -230px;
+  }
+  100% {
+    right: -500px;
+    rotate: 0deg;
+  }
+}
+@keyframes translateBlueRev {
+  0% {
+    top: -70px;
+    right: 500px;
+    rotate: 40deg;
+  }
+  100% {
+    top: -20px;
+    right: -100px;
+    rotate: 0deg;
+  }
+}
+.animateRed {
+  animation: translateRed 1s forwards ease-in;
+}
+
+.animateBlue {
+  animation: translateBlue 1s forwards ease-in;
+}
+
+.animateRedRev {
+  animation: translateRedRev 1s forwards ease-in;
+}
+
+.animateBlueRev {
+  animation: translateBlueRev 1s forwards ease-in;
 }
 
 /*# sourceMappingURL=styles.css.map */
