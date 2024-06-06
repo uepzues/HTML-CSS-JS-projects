@@ -1,0 +1,140 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: slategray;
+  font-family: "Nunito", Arial, sans-serif;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  width: 360px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.container .card_wrapper {
+  height: 100%;
+}
+.container .card_wrapper .card {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+.container .card_wrapper .card .card_top {
+  background-color: goldenrod;
+  position: relative;
+  height: 100%;
+  padding: 30px 30px 90px 30px;
+  border-radius: 20px 20px 0 0;
+}
+.container .card_wrapper .card .card_top .logo {
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.container .card_wrapper .card .card_top .card_top_text {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.container .card_wrapper .card .card_top .card_top_text h1 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.container .card_wrapper .card .card_top .card_top_text p {
+  line-height: 1.2;
+  opacity: 0.7;
+}
+.container .card_wrapper .card .card_top .shoes .shoe1 {
+  height: 350px;
+  position: absolute;
+  top: -20px;
+  right: -100px;
+}
+.container .card_wrapper .card .card_bottom {
+  padding: 30px;
+  height: 100%;
+  border-radius: 20px;
+}
+.container .card_wrapper .card .card_bottom .info {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 25px;
+}
+.container .card_wrapper .card .card_bottom .info .info_top {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-bottom: 10px;
+}
+.container .card_wrapper .card .card_bottom .info .info_top h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(60, 73, 87);
+}
+.container .card_wrapper .card .card_bottom .info .info_top .status {
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: #3dbebe;
+  color: #fff;
+  width: 45px;
+  justify-items: end;
+  text-align: center;
+  margin: auto 20px;
+  padding: 0.5rem 0.6rem;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.container .card_wrapper .card .card_bottom .info .collection {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(60, 73, 87);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.container .card_wrapper .card .card_bottom .size > p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgb(60, 73, 87);
+  margin-bottom: 5px;
+}
+.container .card_wrapper .card .card_bottom .size .sizes {
+  display: flex;
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+.container .card_wrapper .card .card_bottom .size .sizes > p {
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  transform: translateX(-10px);
+}
+.container .card_wrapper .card .card_bottom .size .sizes > p:hover {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3dbebe;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
