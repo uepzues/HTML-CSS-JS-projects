@@ -23,14 +23,20 @@ body {
 
 .container {
   margin: auto;
-  width: 360px;
-  height: 70%;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.7);
+  width: 45rem;
+  height: 80rem;
+  background: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 6rem;
+  transform: translateX(20px);
 }
 .container .card_wrapper {
-  height: 100%;
+  border-radius: 20px;
+  width: 40rem;
+  height: 60rem;
 }
 .container .card_wrapper .card {
   display: grid;
@@ -38,7 +44,7 @@ body {
   height: 100%;
 }
 .container .card_wrapper .card .card_top {
-  background-color: #d5a52b;
+  background-color: goldenrod;
   position: relative;
   height: 100%;
   padding: 30px 30px 90px 30px;
@@ -80,7 +86,8 @@ body {
 .container .card_wrapper .card .card_bottom {
   padding: 30px;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
 }
 .container .card_wrapper .card .card_bottom .info {
   font-size: 1.5rem;

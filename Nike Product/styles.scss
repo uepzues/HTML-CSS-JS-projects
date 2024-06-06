@@ -22,14 +22,19 @@ body {
 
 .container {
   margin: auto;
-  width: 360px;
-  height: 70%;
-  border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.7);
-
+  width: 45rem;
+  height: 80rem;
+  background: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 6rem;
+transform: translateX(20px);  
   .card_wrapper {
-    height: 100%;
+      border-radius: 20px;
+    width: 40rem;
+    height: 60rem;
     .card {
       display: grid;
       grid-template-rows: 50% 50%;
@@ -83,7 +88,8 @@ body {
       .card_bottom {
         padding: 30px;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
+        background-color: #fff;
 
         .info {
           font-size: 1.5rem;
